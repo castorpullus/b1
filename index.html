@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 
 
     <title>ballad</title>
-    
-  </head>
 
-  <body>
+</head>
+
+<body>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $("#leftmenuArea").hide();
-            $(".siteMapBtn").click(function(){
+            $(".siteMapBtn").click(function () {
                 $(".siteMapBtn p").toggle();
-                $('#leftmenuArea').animate({width:'toggle'});
+                $('#leftmenuArea').animate({ width: 'toggle' });
             })
-    
+
         })
     </script>
 
@@ -29,10 +30,21 @@
         <p style="display:none;margin:0;">&equiv;</p>
     </div>
     <div id="leftmenuArea">
-        <h2><a href="http://twitter.com/be_delion" target="_self">menu1</a></h2>
-        <h2><a href="#" target="_self">menu2</a></h2>
-        <h2><a href="#" target="_self">menu3</a></h2>
-        <h2><a href="#" target="_self">menu4</a></h2>
+        <table> 
+            <tr>
+                <td height=800 valign=top>
+                    <h2><a href="http://twitter.com/be_delion" target="_self">menu1</a></h2>
+                    <h2><a href="#" target="_self">menu2</a></h2>
+                    <h2><a href="#" target="_self">menu3</a></h2>
+                    <h2><a href="#" target="_self">menu4</a></h2>
+                </td>
+            </tr>
+            <tr>
+                <td valign=bottom>
+                    <h4>@winterserein</h4>
+                </td>
+            </tr>
+        </table>
     </div>
     <div class="box">
         <video loop autoplay muted>
@@ -43,5 +55,6 @@
         </div>
     </div>
 
-  </body>
+</body>
+
 </html>
